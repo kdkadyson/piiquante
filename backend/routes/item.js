@@ -15,6 +15,7 @@ const itemCtrl = require('../controllers/item');
 
 // CRÉER ROUTES
 router.post('/', auth, multer, itemCtrl.createSauce);
+router.post('/:id/like', auth, itemCtrl.likeOrNot);
 router.put('/:id', auth, multer, itemCtrl.modifySauce);
 router.delete('/:id', auth, itemCtrl.deleteSauce);
 router.get('/:id', auth, itemCtrl.getOneSauce);

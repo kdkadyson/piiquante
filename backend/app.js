@@ -42,8 +42,8 @@ app.use(bodyParser.json());
 //PR USE IMAGES STATIC
 app.use('/images', express.static(path.join(__dirname, 'images')));//REQ IMG SERA SERVI DU DOSSIER STATIC IMG ET Y JOINDRE LE NEW FICHIER
 
-//PR ROUTE ITEM
-app.use('/api/item', itemRoutes);
+//PR ROUTE SAUCE
+app.use('/api/sauces', itemRoutes);
 //PR ROUTE USER
 app.use('/api/auth', userRoutes);
 
